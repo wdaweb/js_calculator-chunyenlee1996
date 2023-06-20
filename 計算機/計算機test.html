@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #114098;
+        border-radius: 50%;
+    }
+
+    #main::before {
+        content: "";
+        width: 370px;
+        height: 370px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1449ac;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #333;
+    }
+
+    #handle {
+        position: absolute;
+        top: -34px;
+        left: 46%;
+        transform-origin: bottom;
+        transform: rotate(30deg);
+    }
+
+    #handle img {
+        height: 230px;
+    }
+
+    #myface {
+        width: 370px;
+        height: 370px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #cec696;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #333;
+        z-index: 1;
+    }
+
+    #anser {
+        width: 200px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #333;
+        box-shadow: 0 0 10px #000;
+    }
+
+    #text {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align-last: right;
+        display: block;
+    }
+
+    #center {
+        position: absolute;
+        top: 64%;
+        left: 41%;
+    }
+
+    #fx td {
+        padding: 0 5px 0 5px;
+        text-shadow: 0 0 3px #333;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div id="handle"><img src="./handle.png" title="拉我移動"></div>
+        <div id="myface">
+            <div id="svg">
+
+                <svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371 371">
+                    <defs>
+                        <style>
+                            .cls-1,
+                            .cls-2 {
+                                fill: #231815;
+                            }
+
+                            .cls-3 {
+                                fill: none;
+                                stroke: #231815;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .cls-2 {
+                                font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+                                font-size: 24px;
+                            }
+                        </style>
+                    </defs>
+                    <circle class="cls-3" cx="185.5" cy="185.5" r="185" />
+                    <text class="cls-2" transform="translate(266.45 62.37)">
+                        <tspan x="0" y="0" class="numAll">0</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(309.86 106.05)">
+                        <tspan x="0" y="0" class="numAll">1</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(333.26 163.01)">
+                        <tspan x="0" y="0" class="numAll">2</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(333.07 224.59)">
+                        <tspan x="0" y="0" class="numAll">3</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(309.34 281.41)">
+                        <tspan x="0" y="0" class="numAll">4</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(265.66 324.83)">
+                        <tspan x="0" y="0" class="numAll">5</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(208.69 348.22)">
+                        <tspan x="0" y="0" class="numAll">6</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(147.12 348.03)">
+                        <tspan x="0" y="0" class="numAll">7</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(90.29 324.3)">
+                        <tspan x="0" y="0" class="numAll">8</tspan>
+                    </text>
+                    <text class="cls-2" transform="translate(46.88 280.62)">
+                        <tspan x="0" y="0" class="numAll">9</tspan>
+                    </text>
+                    <rect class="cls-1" x="249.82" y="13.96" width="4.6" height="21.39"
+                        transform="translate(28.63 -94.61) rotate(22.5)" />
+                    <rect class="cls-1" x="306.31" y="51.7" width="4.6" height="21.39"
+                        transform="translate(134.51 -199.95) rotate(45)" />
+                    <rect class="cls-1" x="344.05" y="108.18" width="4.6" height="21.39"
+                        transform="translate(323.63 -246.6) rotate(67.5)" />
+                    <rect class="cls-1" x="357.3" y="174.81" width="4.6" height="21.39"
+                        transform="translate(545.1 -174.1) rotate(90)" />
+                    <rect class="cls-1" x="344.05" y="241.43" width="4.6" height="21.39"
+                        transform="translate(711.83 28.63) rotate(112.5)" />
+                    <rect class="cls-1" x="306.31" y="297.92" width="4.6" height="21.39"
+                        transform="translate(745.05 308.61) rotate(135)" />
+                    <rect class="cls-1" x="249.82" y="335.66" width="4.6" height="21.39"
+                        transform="translate(617.6 569.85) rotate(157.5)" />
+                    <rect class="cls-1" x="183.2" y="348.91" width="4.6" height="21.39"
+                        transform="translate(371 719.2) rotate(180)" />
+                    <rect class="cls-1" x="116.57" y="335.66" width="4.6" height="21.39"
+                        transform="translate(96.16 711.83) rotate(-157.5)" />
+                    <rect class="cls-1" x="60.09" y="297.92" width="4.6" height="21.39"
+                        transform="translate(-111.71 570.95) rotate(-135)" />
+                    <rect class="cls-1" x="22.35" y="241.43" width="4.6" height="21.39"
+                        transform="translate(-198.85 371.38) rotate(-112.5)" />
+                </svg>
+            </div>
+            <div id="center">
+                <table id="fx">
+                    <tr>
+                        <td class="numAll">+</td>
+                        <td class="numAll">-</td>
+                        <td class="numAll">C</td>
+                    </tr>
+                    <tr>
+                        <td class="numAll">*</td>
+                        <td class="numAll">/</td>
+                        <td class="numAll">=</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="number"></div>
+            <div id="anser"><span id="text">0</span></div>
+        </div>
+    </div>
+
+    <script>
+        const text = document.getElementById('text')
+        const btns = document.getElementsByClassName('numAll')
+
+        for (const btn of btns) {
+            btn.addEventListener('click', () => {
+                btn.textContent可以取tspan裡的值
+                console.log(btn.textContent, btn.innerText)
+                const btnText = btn.textContent || btn.innerText
+                const operators = ['+', '-', '*', '/']
+                const lastText = text.innerText[text.innerText.length - 1]
+                // 如果按的鍵是 =
+                if (btnText === '=') {
+                    // 如果最後一個字不是運算子，才計算
+                    if (!operators.includes(lastText)) {
+                        text.innerText = eval(text.innerText)
+                    }
+                }
+                // 如果按 C，歸 0
+                else if (btnText === 'C') {
+                    text.innerText = '0'
+                }
+                // 如果現在是 0，按的是數字，把文字取代
+                else if (text.innerText === '0' && !isNaN(parseInt(btnText))) {
+                    text.innerText = btnText
+                }
+                // 如果最後一個字是運算子
+                else if (operators.includes(lastText)) {
+                    // 現在按的不是運算子，才加上去
+                    if (!operators.includes(btnText)) {
+                        text.innerText += btnText
+                    }
+                }
+                // 如果最後一個字不是運算子，加上去
+                else {
+                    text.innerText += btnText
+                }
+            })
+        }
+
+        document.addEventListener('keydown', event => {
+            const btnText = event.key
+            const operators = ['+', '-', '*', '/']
+            const lastText = text.innerText[text.innerText.length - 1]
+            // 如果按的鍵是 =
+            if (btnText === '=' || btnText === 'Enter') {
+                // 如果最後一個字不是運算子，才計算
+                if (!operators.includes(lastText)) {
+                    text.innerText = eval(text.innerText)
+                }
+            }
+            // 如果按 C，歸 0
+            else if (btnText === 'c') {
+                text.innerText = '0'
+            }
+            // 如果現在是 0，按的是數字，把文字取代
+            else if (text.innerText === '0' && !isNaN(parseInt(btnText))) {
+                text.innerText = btnText
+            }
+            // 如果最後一個字是運算子
+            else if (operators.includes(lastText)) {
+                // 現在按的不是運算子，且是數字才加上去
+                if (!operators.includes(btnText) && !isNaN(parseInt(btnText))) {
+                    text.innerText += btnText
+                }
+            }
+            // 如果最後一個字不是運算子，且按的是數字或運算子，加上去
+            else if (!isNaN(parseInt(btnText)) || operators.includes(btnText)) {
+                text.innerText += btnText
+            }
+        })
+    </script>
+
+    <!-- 以下是讓他拉桿旋轉 -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.10.17/interact.min.js'
+        integrity='sha512-XcVj3UAxYb1bcxemjAU6ncOu6lhnuRz98icTuL+jrJE+2SCWFMZFc+5FaFsNikLKujDfL71c4LK5OBz1lsAKag=='
+        crossorigin='anonymous'></script>
+    <script>
+        interact('#handle')
+            .draggable({
+                onstart: function (event) {
+                    const element = event.target;
+                    const rect = element.getBoundingClientRect();
+
+                    // store the center as the element has css `transform-origin: center center`
+                    element.dataset.centerX = rect.left + rect.width / 2;
+                    element.dataset.centerY = rect.top + rect.height / 2;
+                    // get the angle of the element when the drag starts
+                    element.dataset.angle = getDragAngle(event);
+                },
+                onmove: function (event) {
+                    var element = event.target;
+                    var center = {
+                        x: parseFloat(element.dataset.centerX) || 0,
+                        y: parseFloat(element.dataset.centerY) || 0,
+                    };
+                    var angle = getDragAngle(event);
+
+                    // update transform style on dragmove
+                    element.style.transform = 'rotate(' + angle + 'rad' + ')';
+                },
+                onend: function (event) {
+                    const element = event.target;
+
+                    // save the angle on dragend
+                    element.dataset.angle = getDragAngle(event);
+                },
+            })
+
+        function getDragAngle(event) {
+            var element = event.target;
+            var startAngle = parseFloat(element.dataset.angle) || 0;
+            var center = {
+                x: parseFloat(element.dataset.centerX) || 0,
+                y: parseFloat(element.dataset.centerY) || 0,
+            };
+            var angle = Math.atan2(center.y - event.clientY,
+                center.x - event.clientX);
+
+            return angle - startAngle;
+        }
+    </script> -->
+</body>
+
+</html>
